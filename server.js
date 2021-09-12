@@ -22,5 +22,5 @@ const seedBook = require('./helper/bookSeed.seed.js');
 // seedBook();
 
 app.get('/test', getTest);
-app.get('/book', getBooks);
+app.get('/books', getBooks);
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
