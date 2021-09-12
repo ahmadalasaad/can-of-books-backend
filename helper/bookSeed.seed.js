@@ -15,7 +15,7 @@ const seedBook = () => {
   firstBook.save();
 
   const secondBook = new bookModel({
-    title: 'haneen',
+    title: 'A Passage North',
     description: 'Anuk Arudpragasams masterful novel is an attempt to come to terms with life in the wake of devastation of Sri Lankas 30-year civil war.',
     status: 'unavailable',
     email:'hanen@email'
