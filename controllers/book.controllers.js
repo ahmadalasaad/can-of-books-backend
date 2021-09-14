@@ -20,7 +20,7 @@ const createBook = (request, response) => {
 
 const deleteBook = (request, response) => {
   console.log(request.params);
-  const bookId = request.params.book_id;
+  const bookId = request.params.books_id;
   bookModel.deleteOne({ _id: bookId }, (error, deletedData) => {
     response.json(deletedData);
   });
