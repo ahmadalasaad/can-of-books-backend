@@ -17,7 +17,8 @@ mongoose.connect(MONGO_URL);
 const {
     getBooks,
     createBook,
-    deleteBook } = require('./controllers/book.controllers.js');
+    deleteBook, 
+    updateBook} = require('./controllers/book.controllers.js');
 
 const getTest = require('./controllers/test.controller.js');
 const seedBook = require('./helper/bookSeed.seed.js');
@@ -27,5 +28,5 @@ app.get('/test', getTest);
 app.get('/books', getBooks);
 app.post('/books', createBook);
 app.delete('/books/:books_id', deleteBook);
-
+app.put('/books/:books_id',updateBook)
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
