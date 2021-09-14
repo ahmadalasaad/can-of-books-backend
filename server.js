@@ -12,7 +12,7 @@ app.use(express.json());
 const PORT = process.env.PORT;
 const MONGO_URL = process.env.MONGO_URL;
 
-mongoose.connect(`${MONGO_URL}`);
+mongoose.connect(MONGO_URL);
 
 const {
     getBooks,
@@ -26,6 +26,6 @@ const seedBook = require('./helper/bookSeed.seed.js');
 app.get('/test', getTest);
 app.get('/books', getBooks);
 app.post('/books', createBook);
-app.delete('/books/:book_id', deleteBook);
+app.delete('/books/:books_id', deleteBook);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
