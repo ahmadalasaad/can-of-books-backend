@@ -8,7 +8,7 @@ const seedBook = () => {
     title: 'The Promise',
     description: 'In Damon Galgut’s deft, powerful story of a diminished family and a troubled land, brutal emotional truths hit home.',
     status: 'availabe',
-    email:'ahmadalserese9754@gmail.com'
+    email:'haneen.hashlamou@gmail.com'
   });
 
   // save the cats data in the DB
@@ -18,7 +18,7 @@ const seedBook = () => {
     title: 'A Passage North',
     description: 'Anuk Arudpragasams masterful novel is an attempt to come to terms with life in the wake of devastation of Sri Lankas 30-year civil war.',
     status: 'unavailable',
-    email:'hanen@email'
+    email:'haneen.hashlamou@gmail.com'
   });
 
   secondBook.save();
